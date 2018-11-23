@@ -76,6 +76,17 @@
               <text value="Circle"/>
             </properties>
           </component>
+          <component id="b1d2e" class="javax.swing.JRadioButton" binding="hexagoneBtn">
+            <constraints/>
+            <properties>
+              <background color="-8191745"/>
+              <foreground color="-16723713"/>
+              <maximumSize width="200" height="52"/>
+              <minimumSize width="200" height="52"/>
+              <preferredSize width="200" height="52"/>
+              <text value="Hexagone"/>
+            </properties>
+          </component>
           <component id="371bd" class="javax.swing.JTextPane" binding="messageZone">
             <constraints/>
             <properties>
@@ -98,6 +109,8 @@
       <member id="7ab1d"/>
       <member id="d9f56"/>
       <member id="59fe8"/>
+      <member id="c522a"/>
+      <member id="b1d2e"/>
     </group>
   </buttonGroups>
 </form>

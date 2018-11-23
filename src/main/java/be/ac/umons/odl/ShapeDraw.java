@@ -2,7 +2,6 @@ package be.ac.umons.odl;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ContainerAdapter;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -15,9 +14,10 @@ public class ShapeDraw {
 	private JRadioButton ellipsisBtn;
 	private JRadioButton circleBtn;
 	private JTextPane messageZone;
+	private JRadioButton hexagoneBtn;
 
 	public ShapeDraw() {
-		$$$setupUI$$$();
+     	$$$setupUI$$$();
 		drawingArea.addMouseListener(new MouseAdapter() {
 			private Point start;
 
@@ -47,6 +47,10 @@ public class ShapeDraw {
 					Ellipsis myEllips=new Ellipsis(start,end);
 					((DrawingPanel) drawingArea).addDrawable(myEllips);
 					messageZone.setText("Select : Ellipsis\nArea : "+myEllips.area()+"\nPerimeter : "+myEllips.perimeter());
+				} else if(hexagoneBtn.isSelected()){
+					Hexagone myHexagone=new Hexagone(start,end);
+					((DrawingPanel) drawingArea).addDrawable(myHexagone);
+					messageZone.setText("Select : Hexagone\nArea : "+myHexagone.area()+"\nPerimeter : "+myHexagone.perimeter());
 				}
 				drawingArea.repaint();
 			}
@@ -113,6 +117,12 @@ public class ShapeDraw {
 		circleBtn.setPreferredSize(new Dimension(200, 52));
 		circleBtn.setText("Circle");
 		controls.add(circleBtn);
+		hexagoneBtn = new JRadioButton();
+		hexagoneBtn.setMaximumSize(new Dimension(200, 52));
+		hexagoneBtn.setMinimumSize(new Dimension(200, 52));
+		hexagoneBtn.setPreferredSize(new Dimension(200, 52));
+		hexagoneBtn.setText("Hexagone");
+		controls.add(hexagoneBtn);
 		messageZone = new JTextPane();
 		messageZone.setEditable(false);
 		messageZone.setEnabled(true);

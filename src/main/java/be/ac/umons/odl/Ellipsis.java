@@ -8,10 +8,10 @@ public class Ellipsis implements Drawable {
 	private int xAxisLength;
 	private int yAxisLength;
 
-	public Ellipsis(Point upLeft, int x, int y) {
-		this.yAxisLength=y;
-		this.xAxisLength=x;
-		this.upLeft=upLeft;
+	public Ellipsis(Point start, Point end) {
+		this.yAxisLength=Math.abs(start.getY()-end.getY());
+		this.xAxisLength=Math.abs(start.getX()-end.getX());
+		this.upLeft=new Point(Math.min(start.getX(),end.getX()),Math.min(start.getY(),end.getY()));
 	}
 
 	public double perimeter(){

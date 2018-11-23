@@ -1,12 +1,12 @@
 package be.ac.umons.odl;
 
 public class Circle extends Ellipsis{
-	private Point center;
+	private Point upLeft;
 	private int radius;
 
-	public Circle (Point center, int radius) {
-		super(center, radius, radius);
-		this.center = center;
+	public Circle (Point upLeft, int radius) {
+		super(upLeft, radius, radius);
+		this.upLeft = upLeft;
 		this.radius = radius;
 	}
 }

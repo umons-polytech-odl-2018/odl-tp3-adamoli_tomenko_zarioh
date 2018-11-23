@@ -4,14 +4,14 @@ import java.awt.*;
 
 public class Ellipsis implements Drawable {
 
-	private Point center;
+	private Point upLeft;
 	private int xAxisLength;
 	private int yAxisLength;
 
-	public Ellipsis(Point O, int x, int y) {
+	public Ellipsis(Point upLeft, int x, int y) {
 		this.yAxisLength=y;
 		this.xAxisLength=x;
-		this.center=O;
+		this.upLeft=upLeft;
 	}
 
 	public double perimeter(){

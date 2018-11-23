@@ -34,27 +34,19 @@ public class ShapeDraw {
 				if (rectBtn.isSelected()) {
 					Rectangle monRect=new Rectangle(start, end);
 					((DrawingPanel) drawingArea).addDrawable(monRect);
-					messageZone.setText("Select : Rectangle");
-					messageZone.setText("Area : "+monRect.area());
-					messageZone.setText("Perimeter : "+monRect.perimeter());
+					messageZone.setText("Select : Rectangle\nArea : "+monRect.area()+"\nPerimeter : "+monRect.perimeter());
 				} else if (squareBtn.isSelected()) {
 					Square mySquare=new Square(start, Math.min(end.getX() - start.getX(), end.getY() - start.getY()));
 					((DrawingPanel) drawingArea).addDrawable(mySquare);
-					messageZone.setText("Select : Square");
-					messageZone.setText("Area : "+mySquare.area());
-					messageZone.setText("Perimeter : "+mySquare.perimeter());
+					messageZone.setText("Select : Square\nArea : "+mySquare.area()+"\nPerimeter : "+mySquare.perimeter());
 				} else if (circleBtn.isSelected()) {
 					Circle myCircle=new Circle(start, Math.min(end.getX() - start.getX(), end.getY() - start.getY()), end);
 					((DrawingPanel) drawingArea).addDrawable(myCircle);
-					messageZone.setText("Select : Circle");
-					messageZone.setText("Area : "+myCircle.area());
-					messageZone.setText("Perimeter : "+myCircle.perimeter());
+					messageZone.setText("Select : Circle\nArea : "+myCircle.area()+"\nPerimeter : "+myCircle.perimeter());
 				} else if(ellipsisBtn.isSelected()){
 					Ellipsis myEllips=new Ellipsis(start,end);
 					((DrawingPanel) drawingArea).addDrawable(myEllips);
-					messageZone.setText("Select : Ellipsis");
-					messageZone.setText("Area : "+myEllips.area());
-					messageZone.setText("Perimeter : "+myEllips.perimeter());
+					messageZone.setText("Select : Ellipsis\nArea : "+myEllips.area()+"\nPerimeter : "+myEllips.perimeter());
 				}
 				drawingArea.repaint();
 			}

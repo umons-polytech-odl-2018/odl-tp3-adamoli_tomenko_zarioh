@@ -4,13 +4,15 @@
     <constraints>
       <xy x="20" y="20" width="1015" height="610"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-65792"/>
+    </properties>
     <border type="none"/>
     <children>
       <grid id="715ff" binding="drawingArea" custom-create="true" layout-manager="BorderLayout" hgap="0" vgap="0">
         <constraints/>
         <properties>
-          <background color="-1"/>
+          <background color="-16723713"/>
           <maximumSize width="800" height="600"/>
           <minimumSize width="800" height="600"/>
           <preferredSize width="800" height="600"/>
@@ -21,6 +23,7 @@
       <grid id="c0997" binding="controls" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
         <constraints/>
         <properties>
+          <background color="-65321"/>
           <maximumSize width="200" height="600"/>
           <minimumSize width="200" height="600"/>
           <preferredSize width="200" height="600"/>
@@ -30,6 +33,8 @@
           <component id="506bf" class="javax.swing.JRadioButton" binding="rectBtn">
             <constraints/>
             <properties>
+              <background color="-8191745"/>
+              <foreground color="-16723713"/>
               <maximumSize width="200" height="52"/>
               <minimumSize width="200" height="52"/>
               <preferredSize width="200" height="52"/>
@@ -40,6 +45,8 @@
           <component id="34056" class="javax.swing.JRadioButton" binding="squareBtn">
             <constraints/>
             <properties>
+              <background color="-8191745"/>
+              <foreground color="-16723713"/>
               <maximumSize width="200" height="52"/>
               <minimumSize width="200" height="52"/>
               <preferredSize width="200" height="52"/>
@@ -49,6 +56,8 @@
           <component id="d9f56" class="javax.swing.JRadioButton" binding="ellipsisBtn">
             <constraints/>
             <properties>
+              <background color="-8191745"/>
+              <foreground color="-16723713"/>
               <maximumSize width="200" height="52"/>
               <minimumSize width="200" height="52"/>
               <opaque value="true"/>
@@ -59,6 +68,8 @@
           <component id="59fe8" class="javax.swing.JRadioButton" binding="circleBtn">
             <constraints/>
             <properties>
+              <background color="-8191745"/>
+              <foreground color="-16723713"/>
               <maximumSize width="200" height="52"/>
               <minimumSize width="200" height="52"/>
               <preferredSize width="200" height="52"/>
@@ -68,6 +79,7 @@
           <component id="371bd" class="javax.swing.JTextPane" binding="messageZone">
             <constraints/>
             <properties>
+              <background color="-1031"/>
               <editable value="false"/>
               <enabled value="true"/>
               <maximumSize width="200" height="200"/>

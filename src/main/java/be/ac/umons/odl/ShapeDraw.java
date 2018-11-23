@@ -36,7 +36,7 @@ public class ShapeDraw {
 					((DrawingPanel) drawingArea).addDrawable(monRect);
 					messageZone.setText("Select : Rectangle\nArea : "+monRect.area()+"\nPerimeter : "+monRect.perimeter());
 				} else if (squareBtn.isSelected()) {
-					Square mySquare=new Square(start, Math.min(end.getX() - start.getX(), end.getY() - start.getY()));
+					Square mySquare=new Square(new Point(Math.min(start.getX(),end.getX()), Math.min(start.getY(), end.getY())), Math.min(Math.abs(end.getX() - start.getX()), Math.abs(end.getY() - start.getY())));
 					((DrawingPanel) drawingArea).addDrawable(mySquare);
 					messageZone.setText("Select : Square\nArea : "+mySquare.area()+"\nPerimeter : "+mySquare.perimeter());
 				} else if (circleBtn.isSelected()) {

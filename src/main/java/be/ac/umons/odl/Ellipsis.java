@@ -24,6 +24,6 @@ public class Ellipsis implements Drawable {
 
 	@Override
 	public void draw(Graphics g) {
-		g.drawOval(10, 10, xAxisLength, yAxisLength);
+		g.drawOval(upLeft.getX(), upLeft.getY(), xAxisLength, yAxisLength);
 	}
 }
